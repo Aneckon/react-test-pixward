@@ -1,0 +1,19 @@
+.home__btn {
+  cursor: pointer;
+  background: transparent;
+  border: 2px solid #fff;
+  background: rgba(27, 28, 26, 0.5);
+  padding: 0.5em 1.5em;
+  font-size: 1.5em;
+  color: #fff;
+  margin: 0 20px;
+  transition: 0.5s;
+}
+
+.home__btn:hover {
+  box-shadow: inset 0 0 14px 8px rgb(222 178 14 / 75%);
+  border-color: #f2c82d;
+  background: rgba(242, 200, 45, 0.75);
+  transform: scaleX(1);
+  color: #000;
+}

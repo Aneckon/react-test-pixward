@@ -1,0 +1,199 @@
+.trailer {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.trailer__texture {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(90deg, #a00c1f 40%, #21478b);
+}
+.texture-one::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: url('https://static-assets-prod.epicgames.com/roborecall/static/webpack/6064abab6d6dd85f5a3f03c9351a13cf.png')
+    no-repeat center;
+  background-size: cover;
+  opacity: 0.3;
+}
+.texture-two::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: url('https://static-assets-prod.epicgames.com/roborecall/static/webpack/966285ade19f9238405bb2622bd5fc6b.png')
+    no-repeat center;
+  background-size: cover;
+  opacity: 0.3;
+}
+.sliders {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
+  -webkit-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+.top {
+  position: absolute;
+  width: 150%;
+  height: 100%;
+  top: -50vh;
+  left: -50%;
+  background: #fff;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  z-index: -1;
+}
+.bottom {
+  z-index: 1;
+  position: absolute;
+  width: 150%;
+  height: 85vh;
+  background: #fff;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  bottom: -75vh;
+  right: 0;
+}
+.bot-2 {
+  right: 50%;
+}
+.bot-2.active{
+  right: 50%;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out 0.5s;
+  transition: -webkit-transform 0.5s ease-in-out 0.5s;
+  -o-transition: transform 0.5s ease-in-out 0.5s;
+  transition: transform 0.5s ease-in-out 0.5s;
+  transition: transform 0.5s ease-in-out 0.5s, -webkit-transform 0.5s ease-in-out 0.5s;
+}
+.bot-1.active{
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition: -webkit-transform .5s ease-out .5s;
+  transition: -webkit-transform .5s ease-out .5s;
+  -o-transition: transform .5s ease-out .5s;
+  transition: transform .5s ease-out .5s;
+  transition: transform .5s ease-out .5s,-webkit-transform .5s ease-out .5s;
+}
+.bot-1{
+  position: absolute;
+  bottom: -40px;
+  right: -5em;
+  max-width: 65em;
+  width: 100%;
+  height: 100%;
+  background: url('https://static-assets-prod.epicgames.com/roborecall/static/webpack/09b9fdaab9ff94cde82d3d5b84acbbcb.png') bottom no-repeat;
+  background-size: contain;
+  z-index: -1;
+  -webkit-transform: translate3d(100%,0,0);
+  transform: translate3d(100%,0,0);
+  z-index: 1;
+}
+.bot-2 {
+  max-width: 30em;
+  width: 80%;
+  height: 85%;
+  position: absolute;
+  bottom: 0%;
+  right: 40%;
+  background: url('https://static-assets-prod.epicgames.com/roborecall/static/webpack/1d854a94b088d72601950f60a46dcd22.png')
+    bottom no-repeat;
+  background-size: contain;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 50em, 0);
+  transform: translate3d(0, 50em, 0);
+  z-index: 1;
+}
+.trailer__title {
+  position: absolute;
+  top: 10em;
+  left: 10em;
+  line-height: 0.9;
+}
+.trailer__title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -15px;
+  width: 70px;
+  height: 10px;
+  background: #21478b;
+}
+.trailer__title h1 {
+  font-family: 'Bebas Neue', cursive;
+  color: #21478b;
+  text-align: left;
+  font-weight: normal;
+  font-size: 8em;
+}
+.trailer__video {
+  position: absolute;
+  top: 30em;
+  left: 10em;
+  line-height: 0.9;
+}
+.trailer__video::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://static-assets-prod.epicgames.com/roborecall/static/webpack/c38443bbfaee21f6d8321788f9801773.jpg')
+    no-repeat center;
+  background-size: cover;
+}
+.trailer__video-btn {
+  position: absolute;
+  left: 0rem;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.trailer__video-btn button {
+  cursor: pointer;
+  line-height: 1em;
+  padding: 0.75em;
+  font-size: 2em;
+  color: #f2c82d;
+  border: 0.25em solid #f2c82d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 11;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.trailer__video-btn button:hover {
+  opacity: 1;
+}
+.trailer__video-btn button::after {
+  content: '';
+  background: url('../images/play.png') no-repeat center;
+  width: 32px;
+  height: 32px;
+}
