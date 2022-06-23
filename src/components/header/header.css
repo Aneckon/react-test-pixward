@@ -11,6 +11,15 @@
   margin: 0 auto;
   top: 0;
   z-index: 11;
+  animation: animatiosHeader linear 1s;
+}
+@keyframes animatiosHeader {
+  0%{
+    transform: translateY(-100%);
+  }
+  100%{
+    transform: translateY(0);
+  }
 }
 .header__left {
   display: flex;

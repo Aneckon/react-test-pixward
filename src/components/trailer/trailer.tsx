@@ -9,7 +9,7 @@ export const Trailer = () => {
         <div className="texture-one"></div>
         <div className="sliders">
           <div className="top white"></div>
-          <div className="bot-2 active"></div>
+          <div className="bot-2"></div>
           <div className="bottom white"></div>
         </div>
         <div className="texture-two"></div>

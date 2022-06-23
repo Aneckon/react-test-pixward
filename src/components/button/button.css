@@ -8,6 +8,15 @@
   color: #fff;
   margin: 0 20px;
   transition: 0.5s;
+  animation: animatiosContent linear 1.2s;
+}
+@keyframes animatiosContent {
+  0%{
+    transform: translateY(100px);
+  }
+  100%{
+    transform: translateY(0);
+  }
 }
 
 .home__btn:hover {
